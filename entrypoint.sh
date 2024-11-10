@@ -17,7 +17,8 @@ if [ -f "/app/package.json" ]; then
   pnpm install
   
   echo "Iniciando servidor de desarrollo..."
-  pnpm run dev
+  pnpm run dev --host
+
 else
   echo "Archivo package.json no encontrado, no se instalarán dependencias ni se iniciará el servidor."
 fi
